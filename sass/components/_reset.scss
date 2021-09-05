@@ -28,19 +28,21 @@ img {
     display: block;
 }
 
-.centered {
-    display: flex;
-    align-items: center;
-}
+// .centered {
+//     display: flex;
+//     align-items: center;
+// }
 
+@media(min-width: 1200px) {
 .flex-between {
     display: flex;
     justify-content: space-between;
 }
-
+}
 .container {
     padding: 0 15px;
     margin: 0 auto;
+
     @media (min-width: 480px) {
         width: 480px;
     }
