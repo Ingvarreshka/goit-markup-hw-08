@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>WebStudio</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap"
@@ -19,7 +19,15 @@
     <header class="header">
         <div class="container header__content--centered">
             <a href="#" class="logo"><span>Web</span>Studio</a>
-
+            <button type="button" class="button__mobile  data-menu-button" aria-expanded="false"
+                aria-control="header__menu">
+                <svg width="40px" height="40px" aria-label="переключательмобильного меню">
+                    <use class="button__mobile-menu" xlink:href="./images/svg/icon.svg#icon-mobile-menu">
+                    </use>
+                    <use class="button__mobile-cross" xlink:href="./images/svg/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="header__menu " id="header__menu" data-menu></div>
             <!-- навигация шапки -->
             <nav class="nav-header">
                 <ul class="nav-header__list">
@@ -477,7 +485,11 @@
                     </div>
                     <button class="button-form" type="submit">Отправить</button>
                 </form>
-
+                <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+                    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+                    crossorigin="anonymous"></script>
+                <script defer src="js/mobile-menu.js"></script>
+                <script src="./Js/menu.js"></script>
                 <script src="./js/modal.js"></script>
 </body>
 
