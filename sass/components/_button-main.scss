@@ -1,0 +1,23 @@
+.main__button {
+    padding: 10px 32px;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    background-color: $blue-color;
+
+    color: $text-btn;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    transition: color 250ms $animation,
+        background-color 250ms $animation;
+}
+
+.main__button:focus,
+.main__button:hover {
+    color: $blue-color;
+    background-color: $primary-color;
+}

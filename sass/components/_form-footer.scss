@@ -1,0 +1,75 @@
+.sub-form {
+    margin-left: 93px;
+
+&__content {
+    display: flex;
+    margin-left: auto;
+}
+
+&__content:last-child {
+    align-items: flex-end;
+}
+
+&__input {
+    display: flex;
+    max-width: 358px;
+    flex-direction: column;
+}
+
+&__caption {
+    color: $title-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+&__email {
+    background-color: $primary-background;
+    font-size: 16px;
+    line-height: 1.25;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 14.5px 0 15px 16px;
+    width: 358px;
+    color: $primary-color;
+}
+}
+.sub-button__label {
+    color: $title-color;
+    background-color: $blue-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    cursor: pointer;
+
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 12px;
+    padding: 11px 29px;
+    border-radius: 4px;
+    border: 0px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color 250ms $animation,
+        color 250ms $animation;
+}
+
+.sub-button__label:hover,
+.sub-button__label:focus,
+.sub-button__label:hover .sub-button__icon {
+    color: $blue-color;
+    background-color: $title-color;
+    fill: $blue-color;
+}
+
+.sub-button__icon {
+    margin-left: 10px;
+    fill: $title-color;
+
+    transition: fill 250ms $animation;
+}

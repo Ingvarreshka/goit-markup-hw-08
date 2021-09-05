@@ -1,0 +1,30 @@
+.info__item {
+    width: 270px;
+}
+
+.info {
+    padding: 94px 0 47px;
+}
+
+.svg {
+    background-color: $background-color-team;
+    padding: 25px 100px;
+    border-radius: 4px;
+}
+
+.info__label {
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.info-item {
+    color: $text-secondary;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}

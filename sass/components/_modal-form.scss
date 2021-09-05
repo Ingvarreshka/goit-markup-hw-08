@@ -1,0 +1,113 @@
+.form-header {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.17;
+        color: $secondary-color;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .form-input:focus+.form-icon {
+        fill: $blue-color;
+    }
+
+    .form-input:focus,
+    .form-text:focus,
+    .form-input:hover,
+    .form-text:hover {
+        border-color: $blue-color;
+        outline: none;
+    }
+
+    .form-field-position {
+        position: relative;
+    }
+
+    .position-field {
+        margin-bottom: 10px;
+    }
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .check_box_form {
+        margin: 30px 0 20px 0;
+    }
+
+    .form-field-text {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        margin-bottom: 4px;
+    }
+
+    .form-text {
+        resize: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        padding: 12px 16px;
+
+        transition: border 250ms $animation;
+    }
+
+    .form-icon {
+        fill: $secondary-color;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        transition: fill 250ms $animation;
+    }
+
+    .form-input {
+        padding: 11px 0 11px 42px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        width: 100%;
+        transition: border 250ms $animation;
+    }
+
+    .input-field {
+        margin-bottom: 20px;
+    }
+
+    .check_box_label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.71;
+        cursor: pointer;
+    }
+
+    .check_input {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .check_box {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        background-color: $title-color;
+        border: 2px solid $secondary-color;
+        margin-right: 7px;
+        border-radius: 4px;
+        transition: background-color 250ms $animation,
+            background-image 250ms $animation;
+    }
+
+    .check_input:checked+.check_box {
+        background-size: contain;
+        background-origin: border-box;
+        background-color: $blue-color;
+        border: 1px solid $blue-color;
+        background-image: url(./images/icon\check.svg);
+
+        transition: background-image 250ms $animation;
+    }

@@ -1,0 +1,22 @@
+.info-title-footer {
+    padding-bottom: 20px;
+    color: $title-color;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.social-link-footer {
+    margin-left: 70px;
+}
+
+.soc-wrap__icon {
+    transition: fill 250ms $animation;
+}
+
+.soc-wrap__link--color {
+    fill: $title-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms $animation;
+}

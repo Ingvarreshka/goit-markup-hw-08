@@ -1,0 +1,23 @@
+.main__section {
+    padding: 200px 0;
+    text-align: center;
+    background-color: $primary-background;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/mainsection.jpg);
+
+
+.main__title {
+    margin: auto;
+    width: 696px;
+
+    color: $title-color;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+}
