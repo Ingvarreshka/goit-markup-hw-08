@@ -11,6 +11,12 @@
     // margin-left: 70px;
 }
 
+.soc-wrap {
+    @media (min-width: 480px){
+    justify-content: center;
+}
+}
+
 .soc-wrap__icon {
     transition: fill 250ms $animation;
 }
