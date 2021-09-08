@@ -17,43 +17,64 @@
     <header class="header">
         <div class="container header__content--centered">
             <a href="#" class="logo"><span>Web</span>Studio</a>
-            <button type="button" class="button__mobile  data-menu-button" aria-expanded="false"
+            <button type="button" class="button__mobile " data-menu-button aria-expanded="false"
                 aria-control="header__menu">
-                <svg width="40px" height="40px" aria-label="переключател мобильного меню">
+                <svg width="40px" height="40px" aria-label="переключательмобильного меню">
                     <use class="button__mobile-menu" xlink:href="./images/svg/icon.svg#icon-mobile-menu">
                     </use>
                     <use class="button__mobile-cross" xlink:href="./images/svg/icon.svg#icon-close"></use>
                 </svg>
             </button>
-            <div class="header__menu " id="header__menu" data-menu></div>
-            <!-- навигация шапки -->
-            <nav class="nav-header">
-                <ul class="nav-header__list">
-                    <li class="nav-header__item nav-header__item-active"><a href="./index.html"
-                            class="nav-header__link nav-header__link current">Студия</a>
-                    </li>
-                    <li class="nav-header__item"><a href="./portfolio.html" class="nav-header__link">Портфолио</a></li>
-                    <li class="nav-header__item"><a href="#" class="nav-header__link">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="header__menu " id="header__menu" data-menu>
+                <!-- навигация шапки -->
+                <nav class="nav-header">
+                    <ul class="nav-header__list">
+                        <li class="nav-header__item nav-header__item-active"><a href="./index.html"
+                                class="nav-header__link nav-header__link current">Студия</a>
+                        </li>
+                        <li class="nav-header__item"><a href="./portfolio.html" class="nav-header__link">Портфолио</a>
+                        </li>
+                        <li class="nav-header__item"><a href="#" class="nav-header__link">Контакты</a></li>
+                    </ul>
+                </nav>
 
-            <!-- контакты шапки -->
-            <ul class="contacts-list">
-                <li class="contacts-list__item">
-                    <a href=" mailto:info@devstudio.com" class="contact-list__link contact-list__link--centered">
-                        <svg class="svg-header" width="16" height="12">
-                            <use href="./images/svg/icon.svg#icon-envelope"></use>
-                        </svg>
-                        <span>info@devstudio.com</span></a>
-                </li>
-                <li class="contacts-list__item">
-                    <a href=" tel:+380961111111" class="contact-list__link contact-list__link--centered">
-                        <svg class="svg-header" width="10" height="16">
-                            <use href="./images/svg/icon.svg#icon-smartphone"></use>
-                        </svg>
-                        <span>+38 096 111 11 11</span></a>
-                </li>
-            </ul>
+                <!-- контакты шапки -->
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <a href=" mailto:info@devstudio.com" class="contact-list__link contact-list__link--centered">
+                            <svg class="svg-header" width="16" height="12">
+                                <use href="./images/svg/icon.svg#icon-envelope"></use>
+                            </svg>
+                            <span>info@devstudio.com</span></a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a href=" tel:+380961111111" class="contact-list__link contact-list__link--centered">
+                            <svg class="svg-header" width="10" height="16">
+                                <use href="./images/svg/icon.svg#icon-smartphone"></use>
+                            </svg>
+                            <span>+38 096 111 11 11</span></a>
+                    </li>
+                </ul>
+                <!-- соцсети меню -->
+                <ul class="additional-social">
+                    <li class="additional-social__item">
+                        <a class="additional-social__link" href="#"><span
+                                class="additional-social__text">Instagram</span></a>
+                    </li>
+                    <li class="additional-social__item">
+                        <a class="additional-social__link " href="#"><span
+                                class="additional-social__text">Twitter</span></a>
+                    </li>
+                    <li class="additional-social__item">
+                        <a class=" additional-social__link " href="#"><span
+                                class="additional-social__text">Facebook</span></a>
+                    </li>
+                    <li class="additional-social__item">
+                        <a class="additional-social__link " href="#"><span
+                                class="additional-social__text">LinkedIn</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -493,11 +514,7 @@
                     </div>
                     <button class="button-form" type="submit">Отправить</button>
                 </form>
-                <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-                    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-                    crossorigin="anonymous"></script>
-                <script defer src="js/mobile-menu.js"></script> -->
-                <script src="./Js/menu.js"></script>
+                <script src="./js/menu.js"></script>
                 <script src="./js/modal.js"></script>
 </body>
 
