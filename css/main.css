@@ -546,6 +546,38 @@ img {
   text-decoration: none;
 }
 
+.additional-social {
+  display: none;
+}
+@media (max-width: 767px) {
+  .additional-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.additional-social__item {
+  padding: 0 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.additional-social__item:first-child {
+  padding: 0 10px 0 0;
+}
+.additional-social__item:last-child {
+  border-right: none;
+  padding: 0 0 0 10px;
+}
+.additional-social__link {
+  text-decoration: none;
+}
+.additional-social__text {
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
 .main__button {
   padding: 10px 32px;
   margin-top: 30px;
