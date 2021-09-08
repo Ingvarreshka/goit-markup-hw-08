@@ -1,7 +1,7 @@
 .main__section {
     padding: 200px 0;
     text-align: center;
-    // max-width: 1600px;
+    max-width: 1600px;
     min-height: 400px;
     background-color: $primary-background;
     
@@ -37,7 +37,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
-        }
+}
 
         @media (min-device-pixel-ratio: 2) and (max-width: 480px),
         (min-resolution: 192dpi) and (max-width: 480px),

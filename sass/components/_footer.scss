@@ -3,19 +3,20 @@
     padding: 60px 0;
 
 
-&__content {
-    padding: 0px;
-}
+    &__content {
+        padding: 0px;
+    }
 
-&__content--centered {
-    // display: flex;
-    // align-items: center;
-}
+    &__content--centered {
+        display: flex;
+        align-items: center;
+    }
 }
 .footer__logo,
 .address__map {
     color: $title-color;
     transition: color 250ms $animation;
+    
 }
 
 .address {
