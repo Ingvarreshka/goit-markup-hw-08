@@ -5,20 +5,24 @@
 
 &__content {
 
-    @media screen and (min-width:767px) {
-    display: flex;
-    margin-left: auto;
-}
-}
-    }
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+            margin-top: 60px;
+        }
+    // @media screen and (min-width:767px) {
+    // display: flex;
+    // margin-left: auto;
 
-&__content:last-child {
-    align-items: flex-end;
 }
+}
+
+// &__content:last-child {
+//     align-items: flex-end;
+// }
 
 &__input {
     display: flex;
-    max-width: 358px;
+    // max-width: 358px;
     flex-direction: column;
 }
 
@@ -40,6 +44,10 @@
     padding: 14.5px 0 15px 16px;
     width: 358px;
     color: $primary-color;
+
+    @media screen and (min-width:480px){
+        
+    }
 }
 }
 .sub-button__label {
@@ -51,7 +59,6 @@
     cursor: pointer;
 
     letter-spacing: 0.06em;
-    display: flex;
     align-items: center;
     justify-content: center;
 
@@ -60,6 +67,10 @@
     border-radius: 4px;
     border: 0px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @media (max-width:480px) {
+        display: flex;
+    }
 
     transition: background-color 250ms $animation,
         color 250ms $animation;
