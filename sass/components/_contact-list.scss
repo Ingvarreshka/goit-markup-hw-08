@@ -1,5 +1,5 @@
 .contacts-list {
-    // display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
        
@@ -17,7 +17,7 @@
 }
 
 .contacts-list__item + .contacts-list__item {
-    // margin-left: 50px;
+    margin-left: 50px;
 }
 
 .contact-list__link {

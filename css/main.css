@@ -420,6 +420,9 @@ img {
 }
 
 .contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -449,6 +452,10 @@ img {
             align-items: center;
     margin: auto 0 64px 0;
   }
+}
+
+.contacts-list__item + .contacts-list__item {
+  margin-left: 50px;
 }
 
 .contact-list__link {
@@ -558,17 +565,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media (min-width: 1200px) {
-  .header__content--centered {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 93px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
 }
 
 .additional-social {
@@ -951,6 +947,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__content--centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .footer__logo,
 .address__map {
@@ -995,8 +998,20 @@ img {
   text-transform: uppercase;
 }
 
-.social-link-footer {
-  margin-left: 70px;
+@media (max-width: 768px) {
+  .social-link-footer {
+    margin: 60px 0 0 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .social-link-footer {
+    margin: 0 0 102px 0;
+  }
+}
+@media (min-width: 768px) {
+  .social-link-footer {
+    margin-left: 70px;
+  }
 }
 
 @media (min-width: 480px) {
@@ -1019,11 +1034,18 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sub-form {
-  margin-left: 93px;
+@media screen and (min-width: 767px) {
+  .sub-form {
+    margin-left: 93px;
+  }
 }
-.sub-form__content {
-  margin-left: auto;
+@media screen and (min-width: 767px) and (min-width: 767px) {
+  .sub-form__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 .sub-form__content:last-child {
   -webkit-box-align: end;

@@ -8,10 +8,22 @@
 }
 
 .social-link-footer {
-    margin-left: 70px;
-}
+    
+    @media (max-width: 768px) {
+             margin: 60px 0 0 0;
 
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        margin: 0 0 102px 0;
+    }
+
+    @media (min-width: 768px) {
+        margin-left: 70px;
+    }
+}
 .soc-wrap {
+    
     @media (min-width: 480px){
     justify-content: center;
 }
