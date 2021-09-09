@@ -1,15 +1,13 @@
 .header {
     position: relative;
+    border-bottom: 2px solid $footer-color-design;
 
 &__menu {
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (min-width: 768px) {
+        @media (min-width: 768px) {
         min-width: 600px;
         justify-content: space-around;
+        display: flex;
     }
 
     @media (min-width: 1200px) {
@@ -46,3 +44,11 @@
     align-items: center;
 }
 
+.header__content--centered {
+    justify-content: space-between;
+    @media (min-width: 1200px) {
+        justify-content: space-between;
+        margin-left: 93px;
+        flex-grow: 1;
+    }
+}

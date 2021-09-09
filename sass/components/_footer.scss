@@ -5,10 +5,11 @@
 
     &__content {
         padding: 0px;
+        text-align: center;
     }
 
     &__content--centered {
-        display: flex;
+        // display: flex;
         align-items: center;
     }
 }
