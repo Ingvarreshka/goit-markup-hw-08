@@ -4,11 +4,14 @@
     margin-left: 93px;
 
 &__content {
+        outline: 3px solid blue;
 
         @media screen and (max-width: 1199px) {
             text-align: center;
             margin-top: 60px;
-        }
+    }
+    
+
     // @media screen and (min-width:767px) {
     // display: flex;
     // margin-left: auto;
@@ -22,8 +25,10 @@
 
 &__input {
     display: flex;
-    // max-width: 358px;
+    margin: 0 auto;
+    max-width: 358px;
     flex-direction: column;
+    outline: 3px solid yellow;
 }
 
 &__caption {
@@ -32,9 +37,14 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    outline: 3px solid yellow;
 }
 
 &__email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: $primary-background;
     font-size: 16px;
     line-height: 1.25;
@@ -44,12 +54,14 @@
     padding: 14.5px 0 15px 16px;
     width: 358px;
     color: $primary-color;
+    outline: 3px solid green;
 
     @media screen and (min-width:480px){
         
     }
 }
 }
+
 .sub-button__label {
     color: $title-color;
     background-color: $blue-color;

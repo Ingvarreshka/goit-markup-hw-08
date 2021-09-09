@@ -1019,6 +1019,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 16px;
+  outline: 3px solid tomato;
 }
 
 .soc-wrap__icon {
@@ -1037,6 +1038,9 @@ img {
   .sub-form {
     margin-left: 93px;
   }
+  .sub-form__content {
+    outline: 3px solid blue;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .sub-form__content {
@@ -1048,10 +1052,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+  max-width: 358px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  outline: 3px solid yellow;
 }
 .sub-form__caption {
   color: #ffffff;
@@ -1059,8 +1066,18 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  outline: 3px solid yellow;
 }
 .sub-form__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #2f303a;
   font-size: 16px;
   line-height: 1.25;
@@ -1070,6 +1087,7 @@ img {
   padding: 14.5px 0 15px 16px;
   width: 358px;
   color: #ffffff;
+  outline: 3px solid green;
 }
 .sub-button__label {
   color: #ffffff;
