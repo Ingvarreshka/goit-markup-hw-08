@@ -575,6 +575,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .additional-social__item {
@@ -1002,6 +1005,9 @@ img {
   }
 }
 
+.social-link-footer {
+  outline: 3px solid tomato;
+}
 @media screen and (min-width: 1200px) {
   .social-link-footer {
     margin-left: 70px;
@@ -1069,6 +1075,13 @@ img {
   outline: 3px solid yellow;
 }
 .sub-form__email {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  width: 100%;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1078,17 +1091,28 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2f303a;
-  font-size: 16px;
-  line-height: 1.25;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 11px 29px;
   border-radius: 4px;
-  margin-top: 20px;
-  padding: 14.5px 0 15px 16px;
-  width: 358px;
-  color: #ffffff;
-  outline: 3px solid green;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media (min-width: 480px) and (max-width: 1199px) {
+  .sub-form__email {
+    min-width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .sub-form__email {
+    min-width: 358px;
+    width: auto;
+    margin-right: 12px;
+  }
+}
+
 .sub-button__label {
   color: #ffffff;
   background-color: #2196f3;
@@ -1112,14 +1136,6 @@ img {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media (max-width: 480px) {
-  .sub-button__label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .sub-button__label:hover,
 .sub-button__label:focus,
 .sub-button__label:hover .sub-button__icon {
