@@ -1,7 +1,8 @@
 .sub-form {
 
-    @media screen and (min-width: 767px) {
-    margin-left: 93px;
+    // @media screen and (min-width: 767px) {
+    // margin-left: 93px;
+    // }
 
 &__content {
         outline: 3px solid blue;
@@ -16,7 +17,7 @@
     // display: flex;
     // margin-left: auto;
 
-}
+
 }
 
 // &__content:last-child {
@@ -41,7 +42,7 @@
 }
 
 &__email {
-    
+    background-color: rgba(255, 255, 255, 0.1);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
