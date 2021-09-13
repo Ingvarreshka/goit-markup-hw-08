@@ -1,29 +1,27 @@
 .info-title-footer {
+    display: block;
     color: $title-color;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
-    @media (min-width:767px) {
     padding-bottom: 20px;
     
 }
-}
 
 .social-link-footer {
-    outline: 3px solid tomato;
-    @media screen and (min-width: 1200px) {
-        margin-left: 70px;
+    outline: 3px solid rgb(203, 71, 255);
+
+    @media (max-width: 768px) {
+        margin: 60px 0 0 0;
     }
-    }
+}
     
 .soc-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
-    outline: 3px solid tomato;
+    outline: 3px solid rgb(123, 255, 71);
 }
 
 

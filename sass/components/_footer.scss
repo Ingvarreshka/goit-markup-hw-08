@@ -4,8 +4,19 @@
 
 
     &__content {
-        padding: 0px;
         text-align: center;
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 
     &__content--centered {
@@ -16,6 +27,7 @@
         }
     }
 }
+
 .footer__logo,
 .address__map {
     color: $title-color;
