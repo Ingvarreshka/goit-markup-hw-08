@@ -1509,16 +1509,21 @@ img {
   border-top: 1px solid #ffffff;
 }
 .product__title {
-  color: #ffffff;
-  font-weight: 700;
+  color: #212121;
   font-size: 18px;
-  line-height: 2;
+  line-height: 36px;
   letter-spacing: 0.06em;
+  font-weight: 700;
   margin-bottom: 4px;
 }
 .product__text {
   font-size: 16px;
   line-height: 1.8;
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
 
 .overlay {
