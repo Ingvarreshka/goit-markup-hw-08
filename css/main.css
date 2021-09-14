@@ -849,7 +849,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  padding-bottom: 30px;
 }
 
 .soc-wrap__item:not(:last-child) {
@@ -1064,11 +1063,14 @@ img {
 
 .sub-form__content {
   outline: 3px solid blue;
-  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (min-width: 480px) and (max-width: 1199px) {
   .sub-form__content {
     min-width: 450px;
+    display: block;
   }
 }
 .sub-form__input {

@@ -1,11 +1,13 @@
 .sub-form {
+    
 
     &__content {
         outline: 3px solid blue;
-        margin-top: 80px;
+        display: flex;
 
          @media (min-width: 480px) and (max-width: 1199px) {
              min-width: 450px;
+             display: block;
          }
     }
 
