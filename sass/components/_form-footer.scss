@@ -2,12 +2,14 @@
     
 
     &__content {
-        outline: 3px solid blue;
-        display: flex;
 
-         @media (min-width: 480px) and (max-width: 1199px) {
+        display: flex;
+        align-items: flex-end;
+        
+        @media (min-width: 480px) and (max-width: 1199px) {
              min-width: 450px;
              display: block;
+             margin-top: 60px;
          }
     }
 
@@ -16,7 +18,12 @@
     margin: 0 auto;
     max-width: 358px;
     flex-direction: column;
-    outline: 3px solid yellow;
+
+    @media (max-width: 1199px) {
+        max-width: 100%;
+        margin-bottom: 20px;
+        
+    }
 }
 
 &__caption {
@@ -25,7 +32,6 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    outline: 3px solid yellow;
 }
 
 &__email {
@@ -56,7 +62,7 @@
 
     padding: 11px 29px;
     border-radius: 4px;
-    margin-right: 10px;
+    
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 

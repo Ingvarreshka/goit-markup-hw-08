@@ -4,7 +4,10 @@
 
 
     &__content {
+
         text-align: center;
+        justify-content: center;
+
         @media (min-width: 768px) {
             display: flex;
             align-items: flex-start;

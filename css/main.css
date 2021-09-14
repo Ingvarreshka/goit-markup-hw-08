@@ -942,6 +942,9 @@ img {
 }
 .footer__content {
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (min-width: 768px) {
   .footer__content {
@@ -1027,9 +1030,6 @@ img {
   padding-bottom: 20px;
 }
 
-.social-link-footer {
-  outline: 3px solid #cb47ff;
-}
 @media (max-width: 768px) {
   .social-link-footer {
     margin: 60px 0 0 0;
@@ -1046,7 +1046,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  outline: 3px solid #7bff47;
 }
 
 .soc-wrap__icon {
@@ -1062,15 +1061,18 @@ img {
 }
 
 .sub-form__content {
-  outline: 3px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 @media (min-width: 480px) and (max-width: 1199px) {
   .sub-form__content {
     min-width: 450px;
     display: block;
+    margin-top: 60px;
   }
 }
 .sub-form__input {
@@ -1083,7 +1085,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  outline: 3px solid yellow;
+}
+@media (max-width: 1199px) {
+  .sub-form__input {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .sub-form__caption {
   color: #ffffff;
@@ -1091,7 +1098,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  outline: 3px solid yellow;
 }
 .sub-form__email {
   background-color: rgba(255, 255, 255, 0.1);
@@ -1113,7 +1119,6 @@ img {
           align-items: center;
   padding: 11px 29px;
   border-radius: 4px;
-  margin-right: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
