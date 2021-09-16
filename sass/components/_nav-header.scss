@@ -5,8 +5,7 @@
 }
 
 .nav-header__list {
-    text-align: center;
-        
+            
     @media (min-width: 768px) {
         display: flex;
         
@@ -14,6 +13,7 @@
 }
 
 .nav-header__item {
+    
         display: block;
         cursor: pointer;
         position: relative;

@@ -5,14 +5,18 @@
 
     &__content {
 
-        text-align: center;
         justify-content: center;
+
+        @media (max-width: 1199px) {
+                text-align: center;
+        }
 
         @media (min-width: 768px) {
             display: flex;
             align-items: flex-start;
             justify-content: space-around;
             flex-wrap: wrap;
+            
         }
 
         @media (min-width: 1200px) {
@@ -24,7 +28,7 @@
 
     &__content--centered {
         
-        align-items: center;
+            align-items: center;
         @media screen and (min-width:768px) {
             display: flex;
         }
@@ -39,7 +43,8 @@
 }
 
 .address {
-    margin-top: 20px;
+
+        margin-top: 20px;
 
         &__map {
         color: $primary-color;

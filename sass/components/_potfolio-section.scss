@@ -25,9 +25,23 @@
         }
     }
 }
-// .portfolio-section {
-//     padding: 94px;
-// }
+.portfolio-section {
+
+     max-width: 1600px;
+     margin-right: auto;
+     margin-left: auto;
+     padding-top: 64px;
+     padding-bottom: 64px;
+
+    @media screen and(min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and(min-width: 1200px) {
+    padding: 94px 0px;
+}
+}
 
 // .product__text {
 //     color: $text-secondary;
