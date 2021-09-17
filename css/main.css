@@ -449,10 +449,27 @@ img {
     margin: auto 0 64px 0;
   }
 }
-
-@media screen and (min-width: 1199px) {
-  .contacts-list__item + .contacts-list__item {
-    margin-left: 50px;
+@media screen and (max-width: 767px) {
+  .contacts-list__item {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .contacts-list__item {
+    margin-top: 10px;
+  }
+}
+.contacts-list__item:first-child {
+  margin-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__item {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__item:last-child {
+    margin-right: 0;
   }
 }
 

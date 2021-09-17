@@ -1,4 +1,5 @@
 .header {
+
     position: relative;
     border-bottom: 2px solid $footer-color-design;
 
@@ -47,10 +48,3 @@
 .header__content--centered {
     justify-content: space-between;
 }
-
-//     @media (min-width: 1200px) {
-//         justify-content: space-between;
-//         margin-left: 93px;
-//         flex-grow: 1;
-//     }
-// }
