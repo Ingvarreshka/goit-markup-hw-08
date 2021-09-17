@@ -800,6 +800,10 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.team {
+  background-color: #f5f4fa;
+}
+
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
