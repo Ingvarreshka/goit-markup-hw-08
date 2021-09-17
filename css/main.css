@@ -417,20 +417,18 @@ img {
   color: #2196f3;
 }
 
-.contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media (min-width: 767) {
+@media screen and (min-width: 1200px) {
   .contacts-list {
-    margin-left: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 767px) {
@@ -452,8 +450,10 @@ img {
   }
 }
 
-.contacts-list__item + .contacts-list__item {
-  margin-left: 50px;
+@media screen and (min-width: 1199px) {
+  .contacts-list__item + .contacts-list__item {
+    margin-left: 50px;
+  }
 }
 
 .contact-list__link {
