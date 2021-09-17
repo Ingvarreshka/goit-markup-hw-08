@@ -46,7 +46,8 @@
 
         margin-top: 20px;
 
-        &__map {
+    &__map {
+
         color: $primary-color;
         font-size: 14px;
         line-height: 1.7;
@@ -63,6 +64,7 @@
     }
 
     &__link {
+
         color: $primary-color;
         font-size: 14px;
         line-height: 1.7;
@@ -73,4 +75,8 @@
         transition: color 250ms $animation;
 
     }
+}
+
+.address__link:not(:last-child) {
+    margin-bottom: 8px;
 }
