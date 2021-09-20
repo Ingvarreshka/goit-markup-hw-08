@@ -792,6 +792,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .info__label {
+    text-align: center;
+  }
+}
 
 @media (min-width: 768px) {
   .info__item {

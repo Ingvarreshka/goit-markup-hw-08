@@ -20,7 +20,7 @@
         display: flex;
         margin: -15px;
     }
-    }
+}
 
 .svg {
     background-color: $background-color-team;
@@ -39,6 +39,9 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .info__item {
