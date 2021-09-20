@@ -459,8 +459,10 @@ img {
     margin-top: 10px;
   }
 }
-.contacts-list__item:first-child {
-  margin-top: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list__item:first-child {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-list__item {
@@ -469,7 +471,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts-list__item:last-child {
-    margin-right: 0;
+    margin-right: 0px;
   }
 }
 
@@ -562,7 +564,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    z-index: 9;
+    z-index: 5;
   }
 }
 
