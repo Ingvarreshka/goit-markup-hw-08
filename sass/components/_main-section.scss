@@ -1,9 +1,13 @@
 .main__section {
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     // max-width: 1600px;
     min-height: 400px;
     background-color: $primary-background;
+
+    @media screen and(min-width: 1200px) {
+        padding: 200px 0;
+    }
     
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -25,9 +29,8 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/main/main1200-min.jpg);
-        padding: 200px 0;
-        min-height: 600px;
-}
+        
+    }
 }
 
 .main__title {

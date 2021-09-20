@@ -6,8 +6,11 @@
 }
 
 .info {
-    // padding: 94px 0 47px;
-     padding: 60px 0px;
+    padding: 60px 0px;
+
+     @media screen and(min-width: 1199px) {
+         padding: 94px 0;
+     }
 
 }
 

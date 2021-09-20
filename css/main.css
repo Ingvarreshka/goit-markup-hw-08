@@ -562,7 +562,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    z-index: 5;
+    z-index: 9;
   }
 }
 
@@ -637,16 +637,22 @@ img {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 42px;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1199px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
 
 .main__section {
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   min-height: 400px;
   background-color: #2f303a;
@@ -655,6 +661,11 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (min-width: 1200px) {
+  .main__section {
+    padding: 200px 0;
+  }
 }
 @media (min-width: 480px) {
   .main__section {
@@ -666,8 +677,6 @@ img {
   .main__section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/main1200-min.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/main1200-min.jpg);
-    padding: 200px 0;
-    min-height: 600px;
   }
 }
 
@@ -733,6 +742,11 @@ img {
 
 .info {
   padding: 60px 0px;
+}
+@media screen and (min-width: 1199px) {
+  .info {
+    padding: 94px 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -819,6 +833,12 @@ img {
 
 .team {
   background-color: #f5f4fa;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1199px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 
 .team-list {
@@ -1254,8 +1274,8 @@ img {
   left: 50%;
   top: 50%;
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   border-radius: 4px;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1264,6 +1284,12 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close {
